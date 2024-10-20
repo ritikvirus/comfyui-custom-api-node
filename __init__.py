@@ -33,7 +33,7 @@ def start_api():
 
 # Kill the process and start the API when ComfyUI initializes
 def init():
-    port = 5000
+    port = 7860
     kill_process_on_port(port)
     threading.Thread(target=start_api).start()
 
